@@ -6,15 +6,29 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import ming.wxxiaomi.com.minguitest.act.DrawerActivity;
+import ming.wxxiaomi.com.minguitest.act.EditTextActivity;
+import ming.wxxiaomi.com.minguitest.act.PersonalActivity;
+import ming.wxxiaomi.com.minguitest.act.SettingActivity;
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private Button edittext;
+    private Button setting;
+    private Button personal;
+    private Button drawer;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         edittext = (Button) findViewById(R.id.edittext);
         edittext.setOnClickListener(this);
+        setting = (Button) findViewById(R.id.setting);
+        setting.setOnClickListener(this);
+        personal = (Button) findViewById(R.id.personal);
+        personal.setOnClickListener(this);
+        drawer = (Button) findViewById(R.id.drawer);
+        drawer.setOnClickListener(this);
     }
 
     @Override
@@ -23,6 +37,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch (view.getId()){
             case R.id.edittext:
                 intent = new Intent(this,EditTextActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.setting:
+                intent = new Intent(this,SettingActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.personal:
+                intent = new Intent(this,PersonalActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.drawer:
+                intent = new Intent(this,DrawerActivity.class);
                 startActivity(intent);
                 break;
         }

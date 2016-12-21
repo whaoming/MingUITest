@@ -1,4 +1,4 @@
-package ming.wxxiaomi.com.minguitest;
+package ming.wxxiaomi.com.minguitest.weight;
 
 import android.app.Activity;
 import android.app.Dialog;

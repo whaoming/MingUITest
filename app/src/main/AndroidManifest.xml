@@ -11,10 +11,16 @@
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".EditTextActivity"></activity>
+        <activity android:name=".act.EditTextActivity" />
+        <activity
+            android:name=".act.SettingActivity"
+            android:theme="@style/Theme.AppCompat" />
+        <activity android:name=".act.PersonalActivity" />
+        <activity android:name=".act.DrawerActivity"></activity>
     </application>
 
 </manifest>
