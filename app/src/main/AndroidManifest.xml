@@ -15,12 +15,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".act.EditTextActivity" />
+        <activity android:name=".ui.register.EditTextActivity" />
         <activity
-            android:name=".act.SettingActivity"
+            android:name=".ui.setting.SettingActivity"
             android:theme="@style/Theme.AppCompat" />
-        <activity android:name=".act.PersonalActivity" />
-        <activity android:name=".act.DrawerActivity"></activity>
+        <activity android:name=".ui.personal.PersonalActivity" />
+        <activity android:name=".ui.drawer.DrawerActivity" />
+        <activity android:name=".ui.userinfo.UserInfoActivity"></activity>
     </application>
 
 </manifest>

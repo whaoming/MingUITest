@@ -6,10 +6,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import ming.wxxiaomi.com.minguitest.act.DrawerActivity;
-import ming.wxxiaomi.com.minguitest.act.EditTextActivity;
-import ming.wxxiaomi.com.minguitest.act.PersonalActivity;
-import ming.wxxiaomi.com.minguitest.act.SettingActivity;
+import ming.wxxiaomi.com.minguitest.ui.drawer.DrawerActivity;
+import ming.wxxiaomi.com.minguitest.ui.register.EditTextActivity;
+import ming.wxxiaomi.com.minguitest.ui.personal.PersonalActivity;
+import ming.wxxiaomi.com.minguitest.ui.setting.SettingActivity;
+import ming.wxxiaomi.com.minguitest.ui.userinfo.UserInfoActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -17,6 +18,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button setting;
     private Button personal;
     private Button drawer;
+    private Button tab;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,6 +31,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         personal.setOnClickListener(this);
         drawer = (Button) findViewById(R.id.drawer);
         drawer.setOnClickListener(this);
+        tab = (Button) findViewById(R.id.tab);
+        tab.setOnClickListener(this);
     }
 
     @Override
@@ -49,6 +53,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.drawer:
                 intent = new Intent(this,DrawerActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.tab:
+                intent = new Intent(this,UserInfoActivity.class);
                 startActivity(intent);
                 break;
         }

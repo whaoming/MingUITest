@@ -1,4 +1,4 @@
-package ming.wxxiaomi.com.minguitest.act;
+package ming.wxxiaomi.com.minguitest.ui.personal;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

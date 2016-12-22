@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 android:orientation="vertical"
-    tools:context="ming.wxxiaomi.com.minguitest.act.DrawerActivity">
+    tools:context="ming.wxxiaomi.com.minguitest.ui.drawer.DrawerActivity">
 
 
     <android.support.v4.widget.DrawerLayout

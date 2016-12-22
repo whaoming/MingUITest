@@ -1,4 +1,4 @@
-package ming.wxxiaomi.com.minguitest.act;
+package ming.wxxiaomi.com.minguitest.ui.register;
 
 import android.graphics.Color;
 import android.support.v4.view.MenuItemCompat;

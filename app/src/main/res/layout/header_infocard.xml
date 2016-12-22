@@ -1,62 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:background="#f3f3f3"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_personal"
-    android:layout_width="wrap_content"
-    android:layout_height="match_parent"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
-    android:layout_gravity="start"
-    android:paddingTop="10dp"
-    tools:context="ming.wxxiaomi.com.minguitest.ui.personal.PersonalActivity">
+    android:layout_width="match_parent"
+    android:background="#f3f3f3"
+    android:layout_height="match_parent">
 
     <LinearLayout
-        android:background="#ffffff"
-        android:layout_width="match_parent"
-        android:layout_height="85dp">
-        <RelativeLayout
-            android:padding="10dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <ImageView
-                android:layout_centerVertical="true"
-                android:layout_marginRight="10dp"
-                android:id="@+id/iv_avatar"
-                android:src="@mipmap/ic_launcher"
-                android:layout_width="50dp"
-                android:layout_height="50dp" />
-            <TextView
-                android:padding="5dp"
-                android:layout_alignParentTop="true"
-                android:gravity="center_vertical"
-                android:layout_toRightOf="@+id/iv_avatar"
-                android:textSize="17sp"
-                android:textColor="#000000"
-                android:id="@+id/tv_nick"
-                android:text="wang"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-            <TextView
-                android:textColor="#666666"
-                android:padding="5dp"
-                android:gravity="center_vertical"
-                android:layout_alignParentBottom="true"
-                android:layout_toRightOf="@+id/iv_avatar"
-                android:textSize="14sp"
-                android:layout_below="@+id/tv_nick"
-                android:text="查看或编辑个人主页"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-        </RelativeLayout>
-    </LinearLayout>
-
-    <LinearLayout
+        android:id="@+id/ll"
         android:layout_marginTop="10dp"
         android:background="@drawable/boder3"
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <RelativeLayout
+            android:id="@+id/rl_collect"
+            android:background="?android:attr/selectableItemBackground"
             android:paddingLeft="10dp"
             android:layout_width="match_parent"
             android:layout_height="65dp">
@@ -74,14 +33,14 @@
                 android:textSize="16sp"
                 android:gravity="center_vertical"
                 android:layout_toRightOf="@+id/iv1"
-                android:text="我的关注"
+                android:text="我的收藏"
                 android:layout_width="wrap_content"
                 android:layout_height="fill_parent" />
             <TextView
-                android:layout_marginRight="15dp"
+                android:layout_marginRight="20dp"
                 android:gravity="center_vertical"
                 android:textColor="#666666"
-                android:text="36"
+                android:text="0"
                 android:layout_alignParentRight="true"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent" />
@@ -96,6 +55,8 @@
                 />
         </RelativeLayout>
         <RelativeLayout
+            android:id="@+id/rl_album"
+            android:background="?android:attr/selectableItemBackground"
             android:paddingLeft="10dp"
             android:layout_width="match_parent"
             android:layout_height="60dp">
@@ -113,7 +74,7 @@
                 android:textSize="16sp"
                 android:gravity="center_vertical"
                 android:layout_toRightOf="@+id/iv2"
-                android:text="我的关注"
+                android:text="我的相册"
                 android:layout_width="wrap_content"
                 android:layout_height="fill_parent" />
 
@@ -144,7 +105,7 @@
                 android:textSize="16sp"
                 android:gravity="center_vertical"
                 android:layout_toRightOf="@+id/iv3"
-                android:text="我的关注"
+                android:text="我的好友"
                 android:layout_width="wrap_content"
                 android:layout_height="fill_parent" />
 
@@ -175,7 +136,7 @@
                 android:textSize="16sp"
                 android:gravity="center_vertical"
                 android:layout_toRightOf="@+id/iv4"
-                android:text="我的关注"
+                android:text="我的足迹"
                 android:layout_width="wrap_content"
                 android:layout_height="fill_parent" />
 
@@ -188,31 +149,17 @@
                 android:layout_height="0.1dp"
                 />
         </RelativeLayout>
-        <RelativeLayout
-            android:paddingLeft="10dp"
-            android:layout_width="match_parent"
-            android:layout_height="60dp">
-            <ImageView
-                android:layout_marginRight="15dp"
-                android:id="@+id/iv5"
-                android:layout_alignParentLeft="true"
-                android:layout_centerVertical="true"
-                android:src="@mipmap/ic_format_quote_grey600_24dp"
-                android:layout_width="30dp"
-                android:layout_height="30dp" />
-            <TextView
-                android:id="@+id/text5"
-                android:textSize="16sp"
-                android:gravity="center_vertical"
-                android:layout_toRightOf="@+id/iv5"
-                android:text="我的关注"
-                android:layout_width="wrap_content"
-                android:layout_height="fill_parent" />
 
-
-        </RelativeLayout>
 
 
     </LinearLayout>
 
-</LinearLayout>
+    <TextView
+android:layout_below="@+id/ll"
+        android:textColor="#666666"
+        android:textSize="14sp"
+        android:layout_margin="15dp"
+        android:text="最新动态"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

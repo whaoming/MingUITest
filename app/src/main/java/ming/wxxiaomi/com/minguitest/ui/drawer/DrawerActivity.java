@@ -1,4 +1,4 @@
-package ming.wxxiaomi.com.minguitest.act;
+package ming.wxxiaomi.com.minguitest.ui.drawer;
 
 import android.support.v4.view.MenuItemCompat;
 import android.support.v4.widget.DrawerLayout;

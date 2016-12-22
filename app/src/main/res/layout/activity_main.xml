@@ -32,4 +32,10 @@
        android:text="去drawer页面"
        android:layout_width="match_parent"
        android:layout_height="wrap_content" />
+
+   <Button
+       android:id="@+id/tab"
+       android:text="去tab页面"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content" />
 </LinearLayout>

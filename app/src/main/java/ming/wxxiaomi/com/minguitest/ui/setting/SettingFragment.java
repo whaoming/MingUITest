@@ -1,4 +1,4 @@
-package ming.wxxiaomi.com.minguitest.act;
+package ming.wxxiaomi.com.minguitest.ui.setting;
 
 import android.content.SharedPreferences;
 import android.os.Bundle;
