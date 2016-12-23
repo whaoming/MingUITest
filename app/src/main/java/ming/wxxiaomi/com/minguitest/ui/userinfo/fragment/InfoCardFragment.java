@@ -51,23 +51,23 @@ public class InfoCardFragment extends Fragment {
 //        mRecyclerView.setRefreshing(true);
         ;
         mRecyclerView.setEmptyView(View.inflate(getActivity(), R.layout.item, null));
-        mRecyclerView.setAdapter(new RecyclerView.Adapter() {
-            @Override
-            public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-                view = View.inflate(parent.getContext(), R.layout.item, null);
-                return new MyViewHolderv(view);
-            }
-
-            @Override
-            public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
-
-            }
-
-            @Override
-            public int getItemCount() {
-                return 15;
-            }
-        });
+//        mRecyclerView.setAdapter(new RecyclerView.Adapter() {
+//            @Override
+//            public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+//                view = View.inflate(parent.getContext(), R.layout.item, null);
+//                return new MyViewHolderv(view);
+//            }
+//
+//            @Override
+//            public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
+//
+//            }
+//
+//            @Override
+//            public int getItemCount() {
+//                return 15;
+//            }
+//        });
     }
 
     public class MyViewHolderv extends RecyclerView.ViewHolder{

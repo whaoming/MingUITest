@@ -10,36 +10,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <TextView
-            android:gravity="center"
-            android:text="asdasdas"
-            android:layout_width="match_parent"
-            android:layout_height="200dp" />
-        <TextView
-            android:gravity="center"
-            android:text="asdasdas"
-            android:layout_width="match_parent"
-            android:layout_height="200dp" />
-        <TextView
-            android:gravity="center"
-            android:text="asdasdas"
-            android:layout_width="match_parent"
-            android:layout_height="200dp" />
-        <TextView
-            android:gravity="center"
-            android:text="asdasdas"
-            android:layout_width="match_parent"
-            android:layout_height="200dp" />
-        <TextView
-            android:gravity="center"
-            android:text="asdasdas"
-            android:layout_width="match_parent"
-            android:layout_height="200dp" />
+<LinearLayout
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"></LinearLayout>
 
-    </LinearLayout>
 </android.support.v4.widget.NestedScrollView>
 </LinearLayout>
