@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 
 import ming.wxxiaomi.com.minguitest.ui.drawer.DrawerActivity;
+import ming.wxxiaomi.com.minguitest.ui.footprint.FootPrintShowActivity;
 import ming.wxxiaomi.com.minguitest.ui.register.EditTextActivity;
 import ming.wxxiaomi.com.minguitest.ui.personal.PersonalActivity;
 import ming.wxxiaomi.com.minguitest.ui.setting.SettingActivity;
@@ -19,6 +20,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button personal;
     private Button drawer;
     private Button tab;
+    private Button footprint;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,6 +35,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         drawer.setOnClickListener(this);
         tab = (Button) findViewById(R.id.tab);
         tab.setOnClickListener(this);
+        footprint = (Button) findViewById(R.id.footprint);
+        footprint.setOnClickListener(this);
     }
 
     @Override
@@ -57,6 +61,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.tab:
                 intent = new Intent(this,UserInfoActivity.class);
+                startActivity(intent);
+                break;
+            case R.id. footprint:
+                intent = new Intent(this,FootPrintShowActivity.class);
                 startActivity(intent);
                 break;
         }

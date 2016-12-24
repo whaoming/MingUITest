@@ -21,7 +21,8 @@
             android:theme="@style/Theme.AppCompat" />
         <activity android:name=".ui.personal.PersonalActivity" />
         <activity android:name=".ui.drawer.DrawerActivity" />
-        <activity android:name=".ui.userinfo.UserInfoActivity"></activity>
+        <activity android:name=".ui.userinfo.UserInfoActivity" />
+        <activity android:name=".ui.footprint.FootPrintShowActivity"></activity>
     </application>
 
 </manifest>
