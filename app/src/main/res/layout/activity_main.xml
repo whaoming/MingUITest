@@ -43,5 +43,10 @@
        android:text="去足迹展示页面"
        android:layout_width="match_parent"
        android:layout_height="wrap_content" />
+   <Button
+       android:id="@+id/search"
+       android:text="去搜索页面"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content" />
 
 </LinearLayout>

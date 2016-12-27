@@ -59,7 +59,8 @@ public class FootPrintShowActivity extends AppCompatActivity {
                 Log.i("wang","onClick");
 //                RelativeLayout.LayoutParams Params =  (RelativeLayout.LayoutParams)demo1.getLayoutParams();
 //                Params.height = 500;
-//                demo1.setLayoutParams(Params);
+//                demo1.setLayoutParams
+// (Params);
 
                 scaleAnimation.setDuration(2000);               //动画持续时间
                 demo1.setAnimation(scaleAnimation);         //设置动画

@@ -10,6 +10,7 @@ import ming.wxxiaomi.com.minguitest.ui.drawer.DrawerActivity;
 import ming.wxxiaomi.com.minguitest.ui.footprint.FootPrintShowActivity;
 import ming.wxxiaomi.com.minguitest.ui.register.EditTextActivity;
 import ming.wxxiaomi.com.minguitest.ui.personal.PersonalActivity;
+import ming.wxxiaomi.com.minguitest.ui.search.SearchActivity;
 import ming.wxxiaomi.com.minguitest.ui.setting.SettingActivity;
 import ming.wxxiaomi.com.minguitest.ui.userinfo.UserInfoActivity;
 
@@ -21,6 +22,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button drawer;
     private Button tab;
     private Button footprint;
+    private Button search;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,6 +39,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         tab.setOnClickListener(this);
         footprint = (Button) findViewById(R.id.footprint);
         footprint.setOnClickListener(this);
+        search = (Button) findViewById(R.id.search);
+        search.setOnClickListener(this);
     }
 
     @Override
@@ -65,6 +69,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id. footprint:
                 intent = new Intent(this,FootPrintShowActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.search:
+                intent = new Intent(this,SearchActivity.class);
                 startActivity(intent);
                 break;
         }
