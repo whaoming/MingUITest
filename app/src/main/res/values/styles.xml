@@ -16,11 +16,14 @@
 
     <style name="mingBar" parent="@style/ThemeOverlay.AppCompat.ActionBar">
         <!--<item name="int"-->
-
+        <item name="colorPrimaryDark">@color/black</item>
+        <!--决定光标颜色-->
+        <item name="colorAccent">@color/white</item>
         <item name="android:textColorPrimary">@android:color/white</item>
         <item name="actionMenuTextColor">@color/white</item>
         <item name="android:background">@color/titleBlue</item>
         <item name="android:textColorHint">#90ffffff</item>
+        <!--<item name="android:searchAutoCompleteTextView">@style/mysearch</item>-->
         <!--<item name="android:paddingStart">0dp</item>-->
         <!--<item name="actionBarStyle">@null</item>-->
         <!--<item name="searchViewStyle">@style/Widget.AppCompat.SearchView</item>-->
@@ -28,6 +31,8 @@
         <!--<item name="android:textColorPrimary">@color/colorPrimary</item>-->
         <!--<item name="popupMenuStyle">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>-->
     </style>
+
+
 
     <style name="ClubToolbar" parent="Widget.AppCompat.Toolbar">
         <item name="contentInsetStart">0dp</item><!-- 设置该属性解决空白部分-->
